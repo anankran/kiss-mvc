@@ -5,6 +5,6 @@ else:
 	$page = 'home';
 endif;
 
-$id = isset($url[1]) ? $url[1] : '';
+$id = isset($url[1]) ? $url[1] : null;
 use Controller\PageController as PageController;
 $controller = new PageController($page,$id);
