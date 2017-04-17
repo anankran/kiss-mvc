@@ -57,7 +57,7 @@ class Database {
     	*/
 	protected static function select($sql)
 	{
-		$values = self::$fields[0];
+		$values = self::$fields;
 		$connect = self::conn();
 		$query = $connect->prepare($sql,array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
 		$query->execute($values);
