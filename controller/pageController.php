@@ -12,10 +12,10 @@ use Model\Main;
 class PageController {
 
 	/**
-   * Return view function and view file
-   * @param $page string View name
-   * @param $id integer Unique ID
-  */
+   	* Return view function and view file
+   	* @param $page string View name
+   	* @param $id integer Unique ID
+  	*/
 	function __construct($page,$id = null)
 	{
 		if(method_exists(__CLASS__,$page)):
@@ -25,11 +25,11 @@ class PageController {
 	}
 
 	/**
-   * Return values to view
-   * @uses Main
-   * @access private
-   * @return array
-  */
+   	* Return values to view
+   	* @uses Main
+   	* @access private
+   	* @return array
+  	*/
 	private function main()
 	{
 		$return = Main::all();
