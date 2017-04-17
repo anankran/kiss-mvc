@@ -38,7 +38,7 @@ class Database {
    	* @access private
    	* @return obj
   	*/
-	private static function connect(){
+	private static function conn(){
 		$host = 'YOUR_HOST';
 		$db = 'DBNAME';
 		$username = 'USERNAME';
@@ -57,7 +57,7 @@ class Database {
 	protected static function select($sql)
 	{
 		$values = self::$fields[0];
-		$connect = self::connect();
+		$connect = self::conn();
 		$query = $connect->prepare($sql,array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
 		$query->execute($values);
 		$result = $query->fetchAll();
