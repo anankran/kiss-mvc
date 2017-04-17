@@ -1,2 +1,4 @@
 # mvc-startup
-MVC application developed to a Startup project
+MVC structure developed to a Startup project
+
+Soon will be added a version using Doctrine
