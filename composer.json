@@ -1,0 +1,13 @@
+{
+	"autoload": {
+        "classmap": [
+        	"model",
+        	"controller"
+        ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "^5.2",
+		"doctrine/dbal": "^2.5",
+		"doctrine/orm": "^2.5"
+    }
+}
