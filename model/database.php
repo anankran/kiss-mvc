@@ -14,30 +14,30 @@ class Database {
 	private static $filters;
 
 	/**
-   * Return filters values
-   * @access protected
-   * @return array
-  */
-  protected static function getFilters()
+   	* Return filters values
+   	* @access protected
+  	 * @return array
+  	*/
+ 	 protected static function getFilters()
 	{
 		return self::$filters;
-  }
+  	}
 
 	/**
-   * Receive filters values
-   * @access protected
-  */
-  protected static function setFilters($filters)
+   	* Receive filters values
+   	* @access protected
+  	*/
+  	protected static function setFilters($filters)
 	{
-  	self::$filters = $filters;
+  		self::$filters = $filters;
 	}
 
 	/**
-   * Connect to MySQL database using PDO
-   * @uses PDO
-   * @access private
-   * @return obj
-  */
+   	* Connect to MySQL database using PDO
+   	* @uses PDO
+   	* @access private
+   	* @return obj
+  	*/
 	private static function connect(){
 		$host = 'YOUR_HOST';
 		$db = 'DBNAME';
@@ -49,11 +49,11 @@ class Database {
 	}
 
 	/**
-     * SELECT statement function
-     * @param $sql string SQL query
-     * @access public
-     * @return obj
-     */
+     	* SELECT statement function
+     	* @param $sql string SQL query
+     	* @access public
+     	* @return obj
+    	*/
 	protected static function select($sql)
 	{
 		$values = self::$fields[0];
