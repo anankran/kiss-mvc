@@ -38,7 +38,8 @@ class Database {
    	* @access private
    	* @return obj
   	*/
-	private static function conn(){
+	private static function conn()
+	{
 		$host = 'YOUR_HOST';
 		$db = 'DBNAME';
 		$username = 'USERNAME';
