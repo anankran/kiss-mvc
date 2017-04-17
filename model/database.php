@@ -40,7 +40,7 @@ class Database {
   	*/
 	private static function conn()
 	{
-		$host = 'YOUR_HOST';
+		$host = 'HOST';
 		$db = 'DBNAME';
 		$username = 'USERNAME';
 		$password = 'PASSWORD';
