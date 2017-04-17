@@ -12,12 +12,12 @@ use Model\Main;
 class MainController {
 
 	/**
-   * Requires data to model (For an AJAX request, for example)
-   * @param $state integer Unique ID
-   * @uses Main
-   * @access public
-   * @return json
-  */
+   	* Requires data to model (For an AJAX request, for example)
+   	* @param $state integer Unique ID
+   	* @uses Main
+   	* @access public
+   	* @return json
+  	*/
 	public function filter($id)
 	{
 		$records = Main::filter($id);
