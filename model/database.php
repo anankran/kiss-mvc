@@ -57,7 +57,7 @@ class Database {
     	*/
 	protected static function select($sql)
 	{
-		$filter = self::$fields;
+		$filter = self::$filters;
 		$conn = self::conn();
 		$query = $conn->prepare($sql,array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
 		$query->execute($filter);
