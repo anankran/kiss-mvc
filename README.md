@@ -10,3 +10,5 @@ To install:
 <pre>git clone https://github.com/anankran/mvc-startup.git</pre>
 
 <pre>composer install</pre>
+
+All objects methods are demonstrative so you can build your owns.
