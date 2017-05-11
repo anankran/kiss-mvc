@@ -11,7 +11,7 @@ define('ROOT_PATH','/var/html/');
 define('FULL_URL','http://youdomain.com/');
 define('ASSETS_URL','http://youdomain.com/public/assets/');
 
-// For NGINX
+// For NGINX. Remove if Apache
 function getallheaders() {
     $headers = [];
     foreach ($_SERVER as $name => $value) {
