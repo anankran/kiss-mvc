@@ -1,5 +1,5 @@
 # mvc-startup
-MVC structure developed to a Startup project.
+MVC developed to a Startup project.
 
 The project still ongoing, so there's many things missing. It was made based on the moment needs.
 
