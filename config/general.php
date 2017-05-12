@@ -11,13 +11,15 @@ define('ROOT_PATH','/var/html/');
 define('FULL_URL','http://youdomain.com/');
 define('ASSETS_URL','http://youdomain.com/public/assets/');
 
-// For NGINX. Remove if Apache
-function getallheaders() {
-    $headers = [];
-    foreach ($_SERVER as $name => $value) {
-        if (substr($name, 0, 5) == 'HTTP_') {
-            $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
-        }
-    }
-    return $headers;
-}
+// For NGINX
+if (!function_exists('getallheaders')):
+  function getallheaders() {
+      $headers = [];
+      foreach ($_SERVER as $name => $value) {
+          if (substr($name, 0, 5) == 'HTTP_') {
+              $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+          }
+      }
+      return $headers;
+  }
+endif;

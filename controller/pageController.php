@@ -18,10 +18,14 @@ class PageController {
   	*/
 	function __construct($page,$id = null)
 	{
-		if(method_exists(__CLASS__,$page)):
-			$records = $this->$page($id);
+		if(file_exists('view/'.$page.'.php')):
+			if(method_exists(__CLASS__,$page)):
+				$records = $this->$page($id);
+			endif;
+			require_once 'view/'.$page.'.php';
+		else:
+			require_once 'view/404.php';
 		endif;
-		require_once 'view/'.$page.'.php';
 	}
 
 	/**
