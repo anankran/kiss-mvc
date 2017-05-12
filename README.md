@@ -11,4 +11,8 @@ To install:
 
 <pre>composer install</pre>
 
+You will also have to use the command bellow to make composer autoload find your models and controllers.
+
+<pre>composer dump-autoload</pre>
+
 All objects methods are demonstrative so you can build your owns.
