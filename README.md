@@ -3,7 +3,7 @@ MVC developed to a Startup project.
 
 The project still ongoing, so there's many things missing. It was made based on the moment needs.
 
-Soon will be added a version using Doctrine.
+Soon will be added a version using Doctrine and with Twig.
 
 To install:
 
