@@ -1,4 +1,4 @@
-# mvc-startup
+# kiss-mvc
 MVC developed to a Startup project.
 
 The project still ongoing, so there's many things missing. It was made based on the moment needs.
