@@ -1,9 +1,11 @@
 # kiss-mvc
-MVC developed to a Startup project.
+MVC using the KISS principle.
 
-The project still ongoing, so there's many things missing. It was made based on the moment needs.
+The general idea of the project is to build an MVC using PHP that is as simple as possible.
 
-Soon will be added a version using Doctrine and Twig.
+You have an idea to make it even simpler, or there's something that if feel that is terribly wrong? So let's do it! ;)
+
+Next steps will be to add ORM and a template engine.
 
 To install:
 
