@@ -13,7 +13,7 @@ To install:
 
 <pre>composer install</pre>
 
-You will also have to use the command bellow to make composer autoload find your models and controllers.
+You'll also have to use the command bellow to make composer autoload find your models and controllers.
 
 <pre>composer dump-autoload</pre>
 
