@@ -3,7 +3,7 @@ MVC using the KISS principle.
 
 The general idea of the project is to build an MVC using PHP that is as simple as possible.
 
-You have an idea to make it even simpler, or there's something that if feel that is terribly wrong? So let's do it! ;)
+You have an idea to make it even simpler, or you feel that there's something you can do it to make it better? So let's do it! ;)
 
 Next steps will be to add ORM and a template engine.
 
