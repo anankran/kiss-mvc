@@ -8,6 +8,8 @@
 namespace Controller;
 
 use Model\Main;
+use Mustache_Engine;
+use Mustache_Loader_FilesystemLoader;
 
 class PageController {
 
@@ -18,13 +20,18 @@ class PageController {
   	*/
 	function __construct($page,$id = null)
 	{
+		$m = new Mustache_Engine(array(
+		    'loader' => new Mustache_Loader_FilesystemLoader('view'),
+		));
 		if(file_exists('view/'.$page.'.php')):
 			if(method_exists(__CLASS__,$page)):
 				$records = $this->$page($id);
+			else:
+				$records = null;
 			endif;
-			require_once 'view/'.$page.'.php';
+			print $m->render( $page, [ 'records' => $records ] );
 		else:
-			require_once 'view/404.php';
+			print $m->render( '404' );
 		endif;
 	}
 
@@ -37,7 +44,7 @@ class PageController {
 	private function main()
 	{
 		$return = Main::all();
-		return array('results' => $return);
+		return [ 'results' => $return ];
 	}
 
 }
