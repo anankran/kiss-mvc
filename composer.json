@@ -8,6 +8,8 @@
     "require": {
         "phpmailer/phpmailer": "^5.2",
 		"doctrine/dbal": "^2.5",
-		"doctrine/orm": "^2.5"
+		"doctrine/orm": "^2.5",
+		"mustache/mustache": "^2.11",
+		"phpunit/phpunit": "^5.7"
     }
 }
