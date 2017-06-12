@@ -5,7 +5,7 @@ The general idea of the project is to build an MVC using PHP that is as simple a
 
 You have an idea to make it even simpler, or you feel that there's something you can do it to make it better? So let's do it! ;)
 
-Next steps will be to add ORM and a template engine.
+Next steps will be to add ORM.
 
 To install:
 
