@@ -50,12 +50,12 @@ class Database {
 	}
 
 	/**
-     	* SELECT statement function
-     	* @param $sql string SQL query
-     	* @access public
-     	* @return obj
-    	*/
-	protected static function select($sql)
+ 	* SELECT statement function
+ 	* @param $sql string SQL query
+ 	* @access public
+ 	* @return obj
+	*/
+	protected static function select(string $sql): array
 	{
 		$filter = self::$filters;
 		$conn = self::conn();

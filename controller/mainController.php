@@ -18,7 +18,7 @@ class MainController {
    	* @access public
    	* @return json
   	*/
-	public function filter($id)
+	public function filter(int $id): string
 	{
 		$records = Main::filter($id);
 		return json_encode($records);

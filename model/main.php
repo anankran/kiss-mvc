@@ -15,11 +15,11 @@ class Main extends Database {
    	* @access public
    	* @return obj
   	*/
-	public static function all()
+	public static function all(): array
 	{
 		$sql = 'SELECT * FROM main';
-    		$records = Database::select($sql);
-    		return $records;
+    	$records = Database::select($sql);
+    	return $records;
 	}
 
 	/**
@@ -29,12 +29,12 @@ class Main extends Database {
    	* @access public
    	* @return obj
  	 */
-	public static function filter($id)
+	public static function filter(int $id): array
 	{
 		$sql = 'SELECT * FROM main WHERE field = ?';
 		Database::setFields(array($id));
    		$records = Database::select($sql);
-    		return $records;
+    	return $records;
 	}
 
 }

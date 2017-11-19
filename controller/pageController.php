@@ -18,21 +18,22 @@ class PageController {
    	* @param $page string View name
    	* @param $id integer Unique ID
   	*/
-	function __construct($page,$id = null)
+	function __construct(string $page, int $id = null)
 	{
 		$m = new Mustache_Engine(array(
 		    'loader' => new Mustache_Loader_FilesystemLoader('view'),
 		));
-		if(file_exists('view/'.$page.'.php')):
-			if(method_exists(__CLASS__,$page)):
+
+		if (file_exists('view/' . $page . '.php')) {
+			if (method_exists(__CLASS__, $page)) {
 				$records = $this->$page($id);
-			else:
+			} else {
 				$records = null;
-			endif;
-			print $m->render( $page, [ 'records' => $records ] );
-		else:
-			print $m->render( '404' );
-		endif;
+			}
+			print $m->render($page, ['records' => $records]);
+		} else {
+			print $m->render('404');
+		}
 	}
 
 	/**
@@ -41,10 +42,10 @@ class PageController {
    	* @access private
    	* @return array
   	*/
-	private function main()
+	private function main(): array
 	{
 		$return = Main::all();
-		return [ 'results' => $return ];
+		return ['results' => $return];
 	}
 
 }
